@@ -34,8 +34,8 @@ public class Robokassa {
 	}
 	
 	public String getLink() {
-		String str = "3dplenty.com:" + sum.toString() + ":" + order.toString() + ":tGTQosyZ19";
+		String str = "3dplenty.com:" + sum.toString() + ":" + order.toString() + ":ineler1";
 		String hex = md5(str);
-		return "http://test.robokassa.ru/Index.aspx?MerchantLogin=3dplenty.com&InvId="+order.toString()+"&OutSum="+sum.toString()+"&SignatureValue=" + hex;
+		return "https://auth.robokassa.ru/Merchant/Handler/MrchSumPreview.ashxMerchantLogin=3dplenty.com&InvId="+order.toString()+"&OutSum="+sum.toString()+"&SignatureValue=" + hex;
 	}
 }
